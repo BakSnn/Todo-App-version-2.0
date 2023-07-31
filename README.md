@@ -1,4 +1,4 @@
-# **!The Todo App. This application allows you to add and remove various tasks added by the user!**
+# **!The Todo App. This application allows you to add and remove various tasks added by the user! In the new version of the application, new buttons and functions have been added. Added the functionality of deleting a task by clicking on the button, as well as highlighting the task as marked. Two buttons have been created that are responsible for deleting all tasks and only completed tasks, respectively!**
 
 ## Available Scripts
 
