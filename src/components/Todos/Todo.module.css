@@ -1,0 +1,65 @@
+﻿.todo {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 15px auto;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 2px solid rgb(70, 61, 61);
+  color: rgb(2, 57, 94);
+  background-color: aliceblue;
+  max-width: 50%;
+}
+
+.todoText {
+  width: 100%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.todoIcon {
+  font-size: 1.8rem;
+  margin-right: 10px;
+  color: rgb(230, 189, 7);
+}
+
+.completedTodo {
+  background-color: unset;
+  color: gray;
+  border-color: gray;
+}
+
+.todo.completedTodo .todoIcon,
+.todo.completedTodo .trashFillIcon,
+.todo.completedTodo .checkIcon {
+  color: gray;
+}
+
+.trashFillIcon,
+.checkIcon {
+  padding: 0 7px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.trashFillIcon:hover,
+.checkIcon:hover {
+  transform: scale(1.3);
+}
+
+.trashFillIcon:hover {
+  color: rgb(221, 0, 0);
+}
+.checkIcon:hover {
+  color: rgb(35, 190, 0);
+}
+
+.trashFillIcon,
+.checkIcon {
+  cursor: pointer;
+  color: gray;
+  padding: 0.7;
+}
+/* Стили для элемента ввода (input) внутри .todo */
