@@ -44,8 +44,7 @@
   transition: 0.2s;
 }
 
-.trashFillIcon:hover,
-.checkIcon:hover {
+:where(.trashFillIcon, .checkIcon):hover {
   transform: scale(1.3);
 }
 
