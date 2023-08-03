@@ -5,6 +5,7 @@ import './App.css'
 import TodoForm from './components/Todos/TodoForm'
 import TodoList from './components/Todos/TodoList'
 import TodosActions from './components/Todos/TodosActions'
+import Clock from './components/Clock/Clock'
 
 function App() {
   const [todos, setTodos] = useState([])
@@ -40,6 +41,7 @@ function App() {
 
   return (
     <div className="App">
+      <Clock />
       <h1>Todo App</h1>
       <TodoForm addTodo={addTodoHandler}></TodoForm>
       <TodosActions
