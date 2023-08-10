@@ -8,6 +8,7 @@
   text-decoration: none;
   border: none;
   cursor: pointer;
+  font-family: 'Rowdies', cursive;
 }
 .buttons:hover {
   background-color: rgba(0, 255, 98, 0.568);
