@@ -11,6 +11,7 @@
 }
 .todoFormContainer input {
   width: 45%;
+  min-width: 30%;
   height: 30px;
   font-size: 1.3rem;
   padding: 10px 15px;
