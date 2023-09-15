@@ -1,4 +1,4 @@
-﻿import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import styles from './Clock.module.css'
 
 function Clock() {
@@ -17,7 +17,7 @@ function Clock() {
   const formatedTime = time.toLocaleTimeString()
 
   return (
-    <div >
+    <div>
       <h1 className={styles.clock}>{formatedTime}</h1>
     </div>
   )

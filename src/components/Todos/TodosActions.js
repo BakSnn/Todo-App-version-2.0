@@ -1,4 +1,4 @@
-﻿import Button from '../UI/Button/Button'
+import Button from '../UI/Button/Button'
 import { RiDeleteBin2Line, RiRefreshLine } from 'react-icons/ri'
 
 function TodosActions({

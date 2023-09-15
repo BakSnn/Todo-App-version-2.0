@@ -1,4 +1,4 @@
-﻿import { RiTodoFill } from 'react-icons/ri'
+import { RiTodoFill } from 'react-icons/ri'
 import { BsTrashFill } from 'react-icons/bs'
 import { ImCheckmark } from 'react-icons/im'
 import styles from './Todo.module.css'
