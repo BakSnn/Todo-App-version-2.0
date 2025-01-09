@@ -1,26 +1,26 @@
-import { useState } from 'react'
-import { v4 as uuidv4 } from 'uuid'
+import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
-import './App.css'
-import TodoForm from './components/Todos/TodoForm'
-import TodoList from './components/Todos/TodoList'
-import TodosActions from './components/Todos/TodosActions'
-import Clock from './components/Clock/Clock'
+import "./App.css";
+import TodoForm from "./components/Todos/TodoForm";
+import TodoList from "./components/Todos/TodoList";
+import TodosActions from "./components/Todos/TodosActions";
+import Clock from "./components/Clock/Clock";
 
 function App() {
-  const [todos, setTodos] = useState([])
+  const [todos, setTodos] = useState([]);
 
   const addTodoHandler = (text) => {
     const newTodo = {
       text: text,
       isCompleted: false,
       id: uuidv4(),
-    }
-    setTodos([...todos, newTodo])
-  }
+    };
+    setTodos([...todos, newTodo]);
+  };
   const deleteTodoHandler = (id) => {
-    setTodos(todos.filter((todo) => todo.id !== id))
-  }
+    setTodos(todos.filter((todo) => todo.id !== id));
+  };
 
   const toggleTodoHandler = (id) => {
     setTodos(
@@ -29,20 +29,20 @@ function App() {
           ? { ...todo, isCompleted: !todo.isCompleted }
           : { ...todo }
       )
-    )
-  }
+    );
+  };
   const resetTodosHandler = () => {
-    setTodos([])
-  }
+    setTodos([]);
+  };
   const deleteCompletedTodosHandler = () => {
-    setTodos(todos.filter((todo) => !todo.isCompleted))
-  }
-  const completedTodosCount = todos.filter((todo) => todo.isCompleted).length
+    setTodos(todos.filter((todo) => !todo.isCompleted));
+  };
+  const completedTodosCount = todos.filter((todo) => todo.isCompleted).length;
 
   return (
     <div className="App">
       <Clock />
-      <h1>Todo App</h1>
+      <h1>Todo App List</h1>
       <TodoForm addTodo={addTodoHandler}></TodoForm>
       <TodosActions
         todos={todos}
@@ -58,7 +58,7 @@ function App() {
         countCompleted={completedTodosCount}
       ></TodoList>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
