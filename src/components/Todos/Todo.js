@@ -4,7 +4,7 @@ import { ImCheckmark } from "react-icons/im";
 import { IoCreateOutline } from "react-icons/io5";
 
 import styles from "./Todo.module.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 function Todo({ todo, deleteTodo, toggleTodo }) {
   const [createdDate, setCreatedDate] = useState(
     new Date().toLocaleDateString()
@@ -17,7 +17,7 @@ function Todo({ todo, deleteTodo, toggleTodo }) {
       }`}
     >
       <IoCreateOutline className={styles.createdDateIcon}></IoCreateOutline>
-      <span className={styles.date}>{createdDate.slice(0,5)}</span>
+      <span className={styles.date}>{createdDate.slice(0, 5)}</span>
       <RiTodoFill className={styles.todoIcon} />
       <div className={styles.todoText}>{todo.text}</div>
       <BsTrashFill

@@ -27,10 +27,13 @@
   color: rgb(230, 189, 7);
 }
 
-.completedTodo {
+.completedTodo{
   background-color: unset;
   color: gray;
   border-color: gray;
+  .date {
+    color: gray;
+  }
 }
 
 .todo.completedTodo .todoIcon,
