@@ -8,7 +8,9 @@
   border: 2px solid rgb(70, 61, 61);
   color: rgb(2, 57, 94);
   background-color: aliceblue;
-  max-width: 50%;
+
+  max-width: 85%;
+  width: 100%;
 }
 
 .todoText {
@@ -60,4 +62,15 @@
   cursor: pointer;
   color: gray;
   padding: 0.7;
+}
+
+.date {
+  font-size: large;
+  color: rgb(2, 57, 94);
+  margin-left: 5px;
+  margin-right: 10px;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
